@@ -82,6 +82,22 @@ select {
   }
 }
 
+.d-flex {
+  display: flex !important;
+}
+
+.aling-item-center {
+  align-items: center !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
 input textarea {
   border: none;
   outline: none;
@@ -164,3 +180,37 @@ textarea {
   padding-top: 30px;
   padding-left: 100px;
 }
+
+.container_contacts {
+  width: 1630px;
+  max-width: 100%;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.contacts-us-form-tabs {
+  padding-top: 65px;
+}
+
+.tab-navs .nav-item-link {
+  min-height: 100px;
+  min-width: 265px;
+  background-color: #ffffff;
+  border: 1px solid #b6b6b7;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+  color: #b6b6b7;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.tab-navs .nav-item-link.active {
+  border-color: #00ac6a;
+  color: #000;
+
+}
+
+.tab-navs .nav-item + .nav-item {
+  margin-left: 30px;
+}
+
