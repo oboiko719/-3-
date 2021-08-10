@@ -264,7 +264,7 @@ textarea {
   flex-grow: 1;
 }
 
-.project-type-checkbox + .project-type-checkbox {
+.project-type-checkbox+.project-type-checkbox {
   padding-top: 20px;
 }
 
@@ -323,9 +323,9 @@ textarea {
 }
 
 .project-team-type-radio input:checked+label::before {
- background-color: #fff;
- padding: 2px;
- background-clip: content-box;
+  background-color: #fff;
+  padding: 2px;
+  background-clip: content-box;
 }
 
 .project-type-checkbox>input:checked+label .project-team-type-radio label {
@@ -334,4 +334,89 @@ textarea {
 
 .project-type-checkbox>input:checked+label .project-team-type-radio label::before {
   border-color: #fff;
+}
+
+.main-form-part {
+  margin-left: 85px;
+  width: 100%;
+  max-width: 740px;
+}
+
+.term-button-checkbox {
+  width: 158px;
+  height: 42px;
+  background-color: rgba(0, 172, 106, 0.0);
+  border: 1px solid #d3d3d4;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.term-button-checkbox input {
+  display: none;
+}
+
+.term-button-checkbox>label {
+  font-size: 16px;
+line-height: 36px;
+font-weight: 700;
+color: #0a0b0f;
+
+}
+
+.term-button-checkbox>input:checked + label {
+  border-color: #00ac6a;
+}
+
+
+
+.term-button-title {
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #0a0b0f;
+}
+
+.input-item {
+  position: relative;
+  max-width: 500px;
+}
+
+.input-item input {
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #d3d3d4;
+  padding-left: 25px;
+  font-family: 'Roboto'sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.input-item label {
+  font-family: 'Roboto'sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+  position: absolute;
+  width: 100%;
+  top: 3px;
+  left: 26px;
+  transition: all 0.2s ease-in;
+}
+
+.input-item input:focus~label,
+.input-item input.value-exist~label {
+  top: -20px;
+  font-size: 12px;
+  color: #969798;
+  font-weight: 300;
+}
+
+.main-form-part .input-item+.input-item {
+  margin-top: 100px;
 }
